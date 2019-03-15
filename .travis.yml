@@ -1,8 +1,10 @@
 services: docker
 
+language: node_js
+
 before_install:
   - docker -v
-  - cp example.env .env
+  - cp .example.env .env
   - sudo /etc/init.d/postgresql stop
   - sudo service mysql stop
 
